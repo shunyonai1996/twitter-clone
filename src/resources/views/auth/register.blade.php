@@ -11,7 +11,12 @@
     {!! Form::open(['route' => 'signup.post']) !!}
         <div class="form-group">
           {!! Form::label('name', 'Name') !!}
-          {!! Form::text('neme', null, ['class' => 'form-control']) !!}
+          {!! Form::text('name', null, ['class' => 'form-control']) !!}
+        </div>
+
+        <div class="form-group">
+          {!! Form::label('email', 'Email') !!}
+          {!! Form::email('email', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
